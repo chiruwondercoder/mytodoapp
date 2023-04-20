@@ -22,6 +22,10 @@ for index, todo in enumerate(todos):
 
 cg.text_input(label="", placeholder="Add new todo here...!", on_change=add_todo, key="new_todo")
 
+cg.write("Instruction to use the App:\n"
+         "1. Enter your new TODO to list by typing in 'Add New'\n"
+         "2. To remove the completed TODO click on the checkbox.")
+
 hide_streamlit_style = """
             <style>
             #MainMenu {visibility: hidden;}
