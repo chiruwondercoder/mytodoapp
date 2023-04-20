@@ -4,8 +4,8 @@ import functions
 todos = functions.get_todos()
 
 def add_todo():
-    todo = cg.session_state["new_todo"] + "\n"
-    todos.append(todo)
+    todotoget = cg.session_state["new_todo"] + "\n"
+    todos.append(todotoget)
     functions.write_todos(todos)
 
 cg.title("Your everyday TODO app!")
